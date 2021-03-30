@@ -13,5 +13,22 @@ a quien le dijeron; si averiguáis quién causó el aullido
 le daremos una recompensa mi querido señor.
 """
 
-conteo = [(i,texto.count(i)) for i in diptongos]
-print(conteo)
+
+def dip_1():
+
+	conteo = [(i,texto.count(i)) for i in diptongos]
+	print(conteo)
+
+
+def dip_2():
+
+	conteo = {i:texto.count(i) for i in diptongos}
+	print(conteo)
+
+
+conteo = map(lambda x:(x,texto.count(x)),diptongos)
+#print(*conteo)
+
+from collections import Counter
+import re
+print(Counter(re.findall(r'^\w[au]',texto)))
