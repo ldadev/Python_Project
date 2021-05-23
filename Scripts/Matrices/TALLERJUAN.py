@@ -117,5 +117,27 @@ def repeat_items(matriz):
 	conteo = {item:(index,items.count(item)) for index,item in columns_item}# contamos y guardamos en un diccionario
 	print(conteo)
 
-repeat_items( [['leche','pan','queso'],['azucar','pan','huevos'],['arroz','pan','pollo']])
+#repeat_items( [['leche','pan','queso'],['azucar','pan','huevos'],['arroz','pan','pollo']])
+
+
+import random
+
+def create_matriz(rows,columns):
+	matriz = []
+	for row in range(rows):
+		matriz.append([])
+		for col in range(columns):
+			matriz[row].append(random.randint(1,6))
+	print(matriz)
+create_matriz(5,5)
+
+#create_matriz(3,3)
+
+def create_matriz_2(rows,columns):
+
+	matriz = [ [random.randint(1,6) for col in range(columns)] for row in range(rows)]
+	return matriz
+print(create_matriz_2(3,3))
+
+
 
