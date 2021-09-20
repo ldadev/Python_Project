@@ -8,7 +8,6 @@ def gana():
 			print(matriz)
 
 
-
 def suma_diagonal():
 	suma_diagonal = 0
 	for i in range(len(matriz)):

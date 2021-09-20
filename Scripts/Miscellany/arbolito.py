@@ -1,4 +1,5 @@
 
+from Math import *
 """
 ancho = 20
 for i in range(ancho):

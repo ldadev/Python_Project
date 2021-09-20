@@ -1,4 +1,4 @@
-
+from pascal import *
 from math import cos
 #ancho del rectangulo  b-a/8
 #alto del rectangulo f(x)
@@ -8,4 +8,6 @@ from math import cos
 
 def area(nom_func,a,b,metodo,n):
 	pass
+
+
 
